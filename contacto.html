@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Aquí encontrarás todas las redes y datos de contacto de Guayoyo Palets además de un Formulario de Cotización.">
+    <meta name="keywords"
+        content="DATOS, REDES, WHATSAPP, EVENTO, PALET, PALLET, CUMPLEAÑOS, BODA, PRODUCTORA, ORGANIZADORA, FIESTA, CELEBRACIÓN">
+    <title>Contacto|Guayoyo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!---------------------------------NAVBAR--------------------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Guayoyo Palets</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                    <a class="nav-link active" href="contacto.html">Contacto</a>
+                    <a class="nav-link" href="galeria.html" tabindex="-1" aria-disabled="true">Galería</a>
+                    <a class="nav-link" href="faq.html">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!---------------------------------Contenido o Cuerpo--------------------------------------------->
+    <main class="main-form">
+        <h1>Formulario de Cotización</h1>
+        <form action="/">
+            <div class="info">
+                <input class="fname" type="text" name="name" placeholder="Nombre Completo">
+                <input type="text" name="email" placeholder="Email">
+                <input type="text" name="cel" placeholder="Número de Teléfono">
+                <label for="date" for="time">Fecha y hora del evento</label>
+                <input type="date" name="date">
+                <input type="time" name="time">
+                <input type="text" name="adress" placeholder="Dirección">
+                <input type="text" name="eventType" placeholder="Tipo de evento">
+                <select>
+                    <option value="number" disabled selected>Número de Invitados</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="40">40</option>
+                    <option value="50">50</option>
+                </select>
+            </div>
+            <h3>Forma de Pago</h3>
+            <div class="payment">
+                <div class="checkboxes">
+                    <input type="checkbox" value="none" id="radioOne" name="transf">
+                    <label for="transf" class="checkbox">Transferencia</label>
+
+                    <input type="checkbox" value="none" id="radioTwo" name="cash">
+                    <label for="cash" class="checkbox">Efectivo</label>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="button">Enviar</button>
+                <button class="button">Borrar</button>
+            </div>
+        </form>
+    </main>
+    <!---------------------------------FOOTER--------------------------------------------->
+    <div class="footerContacto">
+        <footer id="steFooter">
+            <h4 class="footerMsg">Hacemos eventos, ¡Somos Guayoyo Palets!</h4>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

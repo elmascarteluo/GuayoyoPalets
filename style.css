@@ -1,0 +1,424 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@media only screen and (min-width: 1200px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        max-height: 100%;
+    }
+}    
+
+
+/*******************************CSS DE NAVBAR******************************/
+.navbar a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    font-family: 'Roboto', sans-serif;
+}
+.navbar a:hover {
+    background-color: #EE6C87;
+    color: #075c41;
+}
+.navbar a:active {
+    background-color: #F7CE74;
+    box-shadow: 0 5px #996901;
+    transform: translateY(4px);
+}
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
+}
+/*************************CSS DE NAVBAR****************************/
+/*********************CSS Logo Index*****************************************/
+.coverMiddle {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+}
+.coverMiddle img {
+    max-width: 100%;
+    height: auto;
+}
+/*********************CSS Logo********************/
+/***************CSS Texto Slogan de la home********************/
+.slogan {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.slogan h3 {
+    text-align: center;
+    text-justify: inter-word;
+    color: #0B6E4F;
+    font-family: 'Courgette', cursive;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+@media only screen and (min-width:600px) {
+    .coverMiddle {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 100%;
+}
+    #homeLogo img {
+        max-width: 50%;
+}
+    .slogan {
+        font-size: 3em;
+    }
+}
+
+@media only screen and (min-width:1050px){
+    .coverMiddle {
+        display: flex;
+        flex: 1;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: center;
+        margin-top: 100px;
+    }
+    .coverMiddle img {
+        display: flex;
+        max-width: 500px;
+        max-height: 400px;
+    }
+
+    .slogan {
+        display: flex;
+        max-height: 150px;
+        font-family: 'Courgette', cursive;
+        font-size: 45px;
+    }
+}
+
+/********************CSS Texto Slogan de la home*******************+/
+
+/******************CSS del Footer***********************/
+#steFooter {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    text-justify: inter-word;
+    background-color: #340068;
+    height: max-content;
+    z-index: 1999;
+}
+.footerMsg {
+    color: #bbccd8;
+    font-weight: 700;
+    font-size: 1.7em;
+    font-style: italic;
+}
+@media only screen and (min-width: 350px) and (max-width: 480px) {
+    .footerContacto {
+        height: 15%;
+    }
+
+    .footerMsg {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1em;
+    }
+}
+
+#footerGaleria {
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    text-justify: inter-word;
+    background-color: #340068;
+    height: max-content;
+}
+#footerGaleria p {
+    margin-bottom: 0;
+}
+/*************************CSS del Footer***********************/
+/************************CSS de Servicios************************/
+.carousel-inner img {
+    min-height: 85vh;
+    max-height: 100vh;
+}
+.carousel-control-next,
+.carousel-control-prev {
+    background-color: rgba(0, 0, 0, 0.179);
+}
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+    background-color: #0b6e54;
+}
+.carousel-caption h5 {
+    background-color: rgba(169, 169, 169, 0.186);
+    color: #101f12;
+    font-size: 4em;
+    font-family: Courgette, cursive;
+}
+    .carousel-caption p {
+    font-size: 20px;
+    font-weight: 300;
+}
+.carousel-caption #blackPcarousel {
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+}
+@media only screen and (min-width: 370px) and (max-width: 480px) {
+    .carousel-inner img {
+        min-height: 89vh;
+        max-height: 100vh;
+    }
+}
+@media only screen and (min-width: 550px) and (max-width: 1022px) {
+    .carousel-inner img {
+        min-height: 90vh;
+        max-height: 100vh;
+    }
+}
+@media only screen and (min-width: 1023px) and (max-width: 1199px) {
+    .carousel-inner img {
+        min-height: 92vh;
+        max-height: 100vh;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .carousel-inner img {
+        min-height: 85vh;
+        max-height: 85vh;
+    }
+}
+/********************CSS de Servicios*******************/
+/**********************CSS del Formulario*********************/
+.main-form h1,
+h3 {
+    font-family: Satisfy, cursive;
+    font-weight: 400;
+    color: #0C0C0C;
+}
+.main-form h1 {
+    font-size: 32px;
+    text-decoration: underline;
+}
+.main-form,
+.info {
+    display: flex;
+    flex-direction: column;
+}
+.main-form {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100%;
+}
+form {
+    width: 80%;
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #0B6E4F;
+}
+input,
+select {
+    padding: 5px;
+    margin-bottom: 20px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-family: Montserrat;
+    color: #FFFFFF;
+}
+input[type=text] {
+    color: #FFFFFF;
+    font-family: Montserrat;
+}
+label {
+    font-family: Montserrat;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+input::placeholder {
+    font-family: Montserrat;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+option {
+    background: #0d9e9e85;
+    font-family: Montserrat;
+    border: none;
+}
+.payment {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+.checkboxes {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: baseline;
+    margin-left: 4px;
+}
+label.checkbox {
+    margin-right: 10px;
+    margin-left: 3px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+.buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.buttons button {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    padding: 10px;
+    margin: 20px auto 0;
+    border: none;
+    border-radius: 5px;
+    background: #1c87c9;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+.buttons button:hover {
+    background: #095484;
+}
+/***********************CSS del Formulario***********************/
+/**************************CSS de la sección FAQ******************/
+.pregFrec {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 35% 35% 30%;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "q1 q2 aside" "q3 q4 aside" "q5 q6 aside";
+    width: 100%;
+}
+.questions {
+    margin: 10px;
+    background-color: #f4f8f8;
+    border-radius: 8px;
+}
+.questions h4 {
+    font-size: 1em;
+    font-family: 'Satisfy', cursive;
+    color: #340068;
+    text-align: center;
+    text-justify: inter-word;
+}
+.questions p {
+    font-size: 0.9em;
+    color: #6D435A;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+}
+#q1 {
+    grid-area: q1;
+}
+#q2 {
+    grid-area: q2;
+}
+#q3 {
+    grid-area: q3;
+}
+#q4 {
+    grid-area: q4;
+}
+#q5 {
+    grid-area: q5;
+}
+#q6 {
+    grid-area: q6;
+}
+.pregFrec aside {
+    grid-area: aside;
+    background-color: #f3f0ec;
+    height: 100%;
+    margin-top: 10px;
+}
+.pregFrec aside h4 {
+    font-size: 1.6em;
+    font-family: 'Satisfy', cursive;
+    color: #340068;
+    text-align: center;
+    text-justify: inter-word;
+}
+.pregFrec aside p {
+    font-size: 1.4em;
+    color: #6D435A;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+}
+/*************FAQ TABLETS****************/
+.pregFrec {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 35% 35% 30%;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "q1 q2 aside" "q3 q4 aside" "q5 q6 aside";
+    width: 100%;
+}
+.questions {
+    margin: 10px;
+    background-color: #f4f8f8;
+    border-radius: 8px;
+}
+.questions h4 {
+    font-size: 1.7em;
+    font-family: 'Satisfy', cursive;
+    color: #340068;
+    text-align: center;
+    text-justify: inter-word;
+}
+.questions p {
+    font-size: 1em;
+    color: #6D435A;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+}
+#q1 {
+    grid-area: q1;
+}
+#q2 {
+    grid-area: q2;
+}
+#q3 {
+    grid-area: q3;
+}
+#q4 {
+    grid-area: q4;
+}
+#q5 {
+    grid-area: q5;
+}
+#q6 {
+    grid-area: q6;
+}
+.pregFrec aside {
+    grid-area: aside;
+    background-color: #f3f0ec;
+    height: 100%;
+    margin-top: 10px;
+}
+.pregFrec aside h4 {
+    font-size: 2em;
+    font-family: 'Satisfy', cursive;
+    color: #340068;
+    text-align: center;
+    text-justify: inter-word;
+}
+.pregFrec aside p {
+    font-size: 2.3em;
+    color: #6D435A;
+    text-align: center;
+    font-family: 'Courgette', cursive;
+}
