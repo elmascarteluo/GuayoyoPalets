@@ -295,6 +295,9 @@ label.checkbox {
 }
 /***********************CSS del Formulario***********************/
 /**************************CSS de la sección FAQ******************/
+section {
+    margin-bottom: 50px;
+}
 .pregFrec {
     display: grid;
     height: 100%;
@@ -309,14 +312,14 @@ label.checkbox {
     border-radius: 8px;
 }
 .questions h4 {
-    font-size: 1em;
+    font-size: 1.9em;
     font-family: 'Satisfy', cursive;
     color: #340068;
     text-align: center;
     text-justify: inter-word;
 }
 .questions p {
-    font-size: 0.9em;
+    font-size: 1.7em;
     color: #6D435A;
     text-align: center;
     font-family: 'Courgette', cursive;
@@ -353,12 +356,13 @@ label.checkbox {
     text-justify: inter-word;
 }
 .pregFrec aside p {
-    font-size: 1.4em;
+    font-size: 3em;
     color: #6D435A;
     text-align: center;
     font-family: 'Courgette', cursive;
 }
 /*************FAQ TABLETS****************/
+@media only screen and (min-width:640px) and (max-width:860px){
 .pregFrec {
     display: grid;
     height: 100%;
@@ -422,3 +426,72 @@ label.checkbox {
     text-align: center;
     font-family: 'Courgette', cursive;
 }
+}
+
+/**********************************FAQ MÓVILES*******************************/
+
+@media only screen and (min-width:240px) and (max-width:599px){
+    .pregFrec {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 35% 35% 30%;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: "q1 q2 aside" "q3 q4 aside" "q5 q6 aside";
+        width: 100%;
+    }
+    .questions {
+        margin: 10px;
+        background-color: #f4f8f8;
+        border-radius: 8px;
+    }
+    .questions h4 {
+        font-size: 1.4em;
+        font-family: 'Satisfy', cursive;
+        color: #340068;
+        text-align: center;
+        text-justify: inter-word;
+    }
+    .questions p {
+        font-size: 0.9em;
+        color: #6D435A;
+        text-align: center;
+        font-family: 'Courgette', cursive;
+    }
+    #q1 {
+        grid-area: q1;
+    }
+    #q2 {
+        grid-area: q2;
+    }
+    #q3 {
+        grid-area: q3;
+    }
+    #q4 {
+        grid-area: q4;
+    }
+    #q5 {
+        grid-area: q5;
+    }
+    #q6 {
+        grid-area: q6;
+    }
+    .pregFrec aside {
+        grid-area: aside;
+        background-color: #f3f0ec;
+        height: 100%;
+        margin-top: 10px;
+    }
+    .pregFrec aside h4 {
+        font-size: 1.2em;
+        font-family: 'Satisfy', cursive;
+        color: #340068;
+        text-align: center;
+        text-justify: inter-word;
+    }
+    .pregFrec aside p {
+        font-size: 1.4em;
+        color: #6D435A;
+        text-align: center;
+        font-family: 'Courgette', cursive;
+    }
+    }
