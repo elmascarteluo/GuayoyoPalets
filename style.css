@@ -20,16 +20,32 @@
     font-family: 'Roboto', sans-serif;
 }
 .navbar a:hover {
-    background-color: #EE6C87;
-    color: #075c41;
+    background-color: #88d18A;
+    border-radius: 8px;
+    color: #156064!important;
 }
 .navbar a:active {
-    background-color: #F7CE74;
+    background-color: #ffc971;
     box-shadow: 0 5px #996901;
     transform: translateY(4px);
 }
 .nav-link {
     font-family: 'Montserrat', sans-serif;
+}
+
+.navbarLogo {
+    width: 5.5em;
+}
+
+.bg-light {
+    background-color: #da7422!important;
+}
+
+
+@media only screen and (min-width: 991px){
+    .navbarLogo{
+        width: 5.5em;
+    }
 }
 /*************************CSS DE NAVBAR****************************/
 /*********************CSS Logo Index*****************************************/
@@ -50,6 +66,7 @@
     flex-flow: column nowrap;
     align-items: center;
     margin-bottom: 5px;
+    margin-top: 4rem;
 }
 .slogan h3 {
     text-align: center;
@@ -108,12 +125,12 @@
     bottom: 0;
     text-align: center;
     text-justify: inter-word;
-    background-color: #340068;
+    background-color: #156064;
     height: max-content;
     z-index: 1999;
 }
 .footerMsg {
-    color: #bbccd8;
+    color: #88d18a;
     font-weight: 700;
     font-size: 1.7em;
     font-style: italic;
@@ -137,7 +154,7 @@
     bottom: 0;
     text-align: center;
     text-justify: inter-word;
-    background-color: #340068;
+    background-color: #156064;
     height: max-content;
 }
 #footerGaleria p {
@@ -197,6 +214,42 @@
     }
 }
 /********************CSS de Servicios*******************/
+    .servicios {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .servicios_head {
+        width: 32%;
+        
+    }
+
+    .servicios_texto {
+        font-family: Montserrat;
+        font-weight: 500;
+        text-align: justify;
+        width: 80%;
+        margin: 0 1rem 1rem;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+        transition: 0.3s;
+    }
+
+    .servicios_lista {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: 0 0 20px 20px;
+    }
+
+    .servicios_lista ul {
+        padding: 0 0 80px 80px;
+    }
+
+
+
+
+
 /**********************CSS del Formulario*********************/
 .main-form h1,
 h3 {
@@ -218,6 +271,7 @@ h3 {
     align-items: center;
     width: 100%;
     min-height: 100%;
+    padding-bottom: 4rem;
 }
 form {
     width: 80%;
@@ -294,204 +348,74 @@ label.checkbox {
     background: #095484;
 }
 /***********************CSS del Formulario***********************/
-/**************************CSS de la sección FAQ******************/
-section {
-    margin-bottom: 50px;
-}
-.pregFrec {
-    display: grid;
-    height: 100%;
-    grid-template-columns: 35% 35% 30%;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "q1 q2 aside" "q3 q4 aside" "q5 q6 aside";
-    width: 100%;
-}
-.questions {
-    margin: 10px;
-    background-color: #f4f8f8;
-    border-radius: 8px;
-}
-.questions h4 {
-    font-size: 1.9em;
-    font-family: 'Satisfy', cursive;
-    color: #340068;
-    text-align: center;
-    text-justify: inter-word;
-}
-.questions p {
-    font-size: 1.7em;
-    color: #6D435A;
-    text-align: center;
-    font-family: 'Courgette', cursive;
-}
-#q1 {
-    grid-area: q1;
-}
-#q2 {
-    grid-area: q2;
-}
-#q3 {
-    grid-area: q3;
-}
-#q4 {
-    grid-area: q4;
-}
-#q5 {
-    grid-area: q5;
-}
-#q6 {
-    grid-area: q6;
-}
-.pregFrec aside {
-    grid-area: aside;
-    background-color: #f3f0ec;
-    height: 100%;
-    margin-top: 10px;
-}
-.pregFrec aside h4 {
-    font-size: 1.6em;
-    font-family: 'Satisfy', cursive;
-    color: #340068;
-    text-align: center;
-    text-justify: inter-word;
-}
-.pregFrec aside p {
-    font-size: 3em;
-    color: #6D435A;
-    text-align: center;
-    font-family: 'Courgette', cursive;
-}
-/*************FAQ TABLETS****************/
-@media only screen and (min-width:640px) and (max-width:860px){
-.pregFrec {
-    display: grid;
-    height: 100%;
-    grid-template-columns: 35% 35% 30%;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "q1 q2 aside" "q3 q4 aside" "q5 q6 aside";
-    width: 100%;
-}
-.questions {
-    margin: 10px;
-    background-color: #f4f8f8;
-    border-radius: 8px;
-}
-.questions h4 {
-    font-size: 1.7em;
-    font-family: 'Satisfy', cursive;
-    color: #340068;
-    text-align: center;
-    text-justify: inter-word;
-}
-.questions p {
-    font-size: 1em;
-    color: #6D435A;
-    text-align: center;
-    font-family: 'Courgette', cursive;
-}
-#q1 {
-    grid-area: q1;
-}
-#q2 {
-    grid-area: q2;
-}
-#q3 {
-    grid-area: q3;
-}
-#q4 {
-    grid-area: q4;
-}
-#q5 {
-    grid-area: q5;
-}
-#q6 {
-    grid-area: q6;
-}
-.pregFrec aside {
-    grid-area: aside;
-    background-color: #f3f0ec;
-    height: 100%;
-    margin-top: 10px;
-}
-.pregFrec aside h4 {
-    font-size: 2em;
-    font-family: 'Satisfy', cursive;
-    color: #340068;
-    text-align: center;
-    text-justify: inter-word;
-}
-.pregFrec aside p {
-    font-size: 2.3em;
-    color: #6D435A;
-    text-align: center;
-    font-family: 'Courgette', cursive;
-}
+/**************************CSS de la sección TEAM******************/
+.team_members {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 60px;
 }
 
-/**********************************FAQ MÓVILES*******************************/
+.cardD {
+    width: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 1rem 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    transition: 0.3s;
+    border-radius: 5px;
+}
 
-@media only screen and (min-width:240px) and (max-width:599px){
-    .pregFrec {
-        display: grid;
-        height: 100%;
-        grid-template-columns: 35% 35% 30%;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas: "q1 q2 aside" "q3 q4 aside" "q5 q6 aside";
-        width: 100%;
-    }
-    .questions {
-        margin: 10px;
-        background-color: #f4f8f8;
-        border-radius: 8px;
-    }
-    .questions h4 {
-        font-size: 1.4em;
-        font-family: 'Satisfy', cursive;
-        color: #340068;
-        text-align: center;
-        text-justify: inter-word;
-    }
-    .questions p {
-        font-size: 0.9em;
-        color: #6D435A;
-        text-align: center;
-        font-family: 'Courgette', cursive;
-    }
-    #q1 {
-        grid-area: q1;
-    }
-    #q2 {
-        grid-area: q2;
-    }
-    #q3 {
-        grid-area: q3;
-    }
-    #q4 {
-        grid-area: q4;
-    }
-    #q5 {
-        grid-area: q5;
-    }
-    #q6 {
-        grid-area: q6;
-    }
-    .pregFrec aside {
-        grid-area: aside;
-        background-color: #f3f0ec;
-        height: 100%;
-        margin-top: 10px;
-    }
-    .pregFrec aside h4 {
-        font-size: 1.2em;
-        font-family: 'Satisfy', cursive;
-        color: #340068;
-        text-align: center;
-        text-justify: inter-word;
-    }
-    .pregFrec aside p {
-        font-size: 1.4em;
-        color: #6D435A;
-        text-align: center;
-        font-family: 'Courgette', cursive;
-    }
-    }
+.cardD:hover:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+}
+
+
+.card__picture{
+    width: 100%;
+    padding: 0;
+    vertical-align: top;
+    border-radius: 5px 5px 0 0;
+}
+
+.member_description {
+    padding: 8px 16px;
+}
+
+
+@media only screen and (min-width:1025px){
+.team_members {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.cardD {
+    width: 25%;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 1rem 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    transition: 0.3s;
+    border-radius: 5px;
+    border-spacing: 0;
+    vertical-align: top;
+}
+
+.cardD:hover:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+}
+
+
+.card__picture{
+    width: 100%;
+    padding: 0;
+    vertical-align: top;
+    border-radius: 5px 5px 0 0;
+}
+
+.member_description {
+    padding: 8px 16px;
+}
+}
