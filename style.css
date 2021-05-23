@@ -54,6 +54,7 @@
     flex-flow: row wrap;
     justify-content: center;
     width: 100%;
+    padding-top: 0.8rem;
 }
 .coverMiddle img {
     max-width: 100%;
