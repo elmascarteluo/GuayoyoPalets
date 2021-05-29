@@ -189,12 +189,49 @@
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5.5rem;
+}
+
+.servicios__imgContainer {
+    position: relative;
+    text-align: center;
+    color: #FFC971;
+}
+
+.servicios__imagenes__texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+}
+
+#servicios__cumpleaños {
+    font-family: Montserrat;
+    font-weight: 500;
+    color: #1d3557;
+    padding-bottom: 0.35em;
+}
+
+#servicios__bodas {
+    font-family: Courgette, italic;
+    color: #cc5803;
+    padding-top: 0.35em;
+}
+
+#servicios__eventos {
+    font-family: 'EB Garamond', serif;
+    font-weight: 600;
+    color: #f8b6f6;
+    padding-top: 1em;
 }
 
 .servicios_imagenes img {
-    width: 80%;
+    width: 55rem;
     height: 20rem;
     margin: 0.7rem 0.7rem 0 0;
+    border: #156064 2px solid;
+    border-radius: 4px;
 }
 
 /********************CSS de Servicios*******************/
