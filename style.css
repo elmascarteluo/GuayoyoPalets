@@ -34,7 +34,7 @@
 }
 
 .navbarLogo {
-    width: 5.5em;
+    width: 5em;
 }
 
 .bg-light {
@@ -163,93 +163,41 @@
 }
 /*************************CSS del Footer***********************/
 /************************CSS de Servicios************************/
-.carousel-inner img {
-    min-height: 85vh;
-    max-height: 100vh;
+.servicios {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
-.carousel-control-next,
-.carousel-control-prev {
-    background-color: rgba(0, 0, 0, 0.179);
+
+.servicios_head {
+    width: 32%;
 }
-.carousel-control-next:hover,
-.carousel-control-prev:hover {
-    background-color: #0b6e54;
+
+.servicios_texto {
+    font-family: Montserrat;
+    font-weight: 500;
+    text-align: justify;
+    width: 80%;
+    margin: 0 1rem 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    transition: 0.3s;
+    margin-bottom: 4rem;
 }
-.carousel-caption h5 {
-    background-color: rgba(169, 169, 169, 0.186);
-    color: #101f12;
-    font-size: 4em;
-    font-family: Courgette, cursive;
+
+.servicios_imagenes {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
-    .carousel-caption p {
-    font-size: 20px;
-    font-weight: 300;
+
+.servicios_imagenes img {
+    width: 80%;
+    height: 20rem;
+    margin: 0.7rem 0.7rem 0 0;
 }
-.carousel-caption #blackPcarousel {
-    color: black;
-    font-size: 17px;
-    font-weight: 600;
-}
-@media only screen and (min-width: 370px) and (max-width: 480px) {
-    .carousel-inner img {
-        min-height: 89vh;
-        max-height: 100vh;
-    }
-}
-@media only screen and (min-width: 550px) and (max-width: 1022px) {
-    .carousel-inner img {
-        min-height: 90vh;
-        max-height: 100vh;
-    }
-}
-@media only screen and (min-width: 1023px) and (max-width: 1199px) {
-    .carousel-inner img {
-        min-height: 92vh;
-        max-height: 100vh;
-    }
-}
-@media only screen and (min-width: 1200px) {
-    .carousel-inner img {
-        min-height: 85vh;
-        max-height: 85vh;
-    }
-}
+
 /********************CSS de Servicios*******************/
-    .servicios {
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-    }
-
-    .servicios_head {
-        width: 32%;
-        
-    }
-
-    .servicios_texto {
-        font-family: Montserrat;
-        font-weight: 500;
-        text-align: justify;
-        width: 80%;
-        margin: 0 1rem 1rem;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
-        transition: 0.3s;
-    }
-
-    .servicios_lista {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        padding: 0 0 20px 20px;
-    }
-
-    .servicios_lista ul {
-        padding: 0 0 80px 80px;
-    }
-
-
-
-
 
 /**********************CSS del Formulario*********************/
 .main-form h1,
