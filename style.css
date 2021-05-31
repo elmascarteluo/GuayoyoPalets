@@ -161,8 +161,88 @@
 #footerGaleria p {
     margin-bottom: 0;
 }
+
+@media only screen and (min-width:990px) and (max-width:1199px){
+    #footerGaleria {
+        position: absolute;
+    }
+}
 /*************************CSS del Footer***********************/
 /************************CSS de Servicios************************/
+.servicios {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.servicios_head {
+    width: 22em;
+}
+
+.servicios_texto {
+    font-family: Montserrat;
+    font-weight: 500;
+    text-align: justify;
+    width: 90%;
+    margin: 0 1rem 1rem;
+    padding: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    transition: 0.3s;
+    margin-bottom: 1rem;
+}
+
+.servicios_imagenes {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.servicios__imgContainer {
+    position: relative;
+    text-align: center;
+    color: #FFC971;
+}
+
+.servicios__imagenes__texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+}
+
+#servicios__cumpleaños {
+    font-family: Montserrat;
+    font-weight: 500;
+    color: #1d3557;
+    padding-bottom: 5.5em;
+}
+
+#servicios__bodas {
+    font-family: Courgette, italic;
+    color: #cc5803;
+    padding-bottom: 00.35em;
+}
+
+#servicios__eventos {
+    font-family: 'EB Garamond', serif;
+    font-weight: 600;
+    color: #0eace6;
+    padding-top: 4em;
+}
+
+.servicios_imagenes img {
+    width: 90%;
+    height: 20rem;
+    border: #156064 2px solid;
+    border-radius: 4px;
+    margin-bottom: 0.8rem;
+}
+
+
+@media only screen and (min-width:1200px){
 .servicios {
     display: flex;
     flex-flow: column;
@@ -176,6 +256,7 @@
 .servicios_texto {
     font-family: Montserrat;
     font-weight: 500;
+    font-size: 1.2em;
     text-align: justify;
     width: 80%;
     margin: 0 1rem 1rem;
@@ -232,6 +313,7 @@
     margin: 0.7rem 0.7rem 0 0;
     border: #156064 2px solid;
     border-radius: 4px;
+}
 }
 
 /********************CSS de Servicios*******************/
@@ -334,6 +416,16 @@ label.checkbox {
     background: #095484;
 }
 /***********************CSS del Formulario***********************/
+/*************************CCS GALERíA****************************/
+.zoomA {
+    transition: transform ease-in-out 0.3s;
+}
+
+.zoomA:hover {
+    transform: scale(1.2);
+}
+
+
 /**************************CSS de la sección TEAM******************/
 .team_members {
     display: flex;
